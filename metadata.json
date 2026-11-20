@@ -1,0 +1,6 @@
+{
+  "name": "Muñeca Brava — Español → Հայերեն",
+  "description": "Интерактивное приложение для изучения испанского языка по аргентинскому сериалу Muñeca Brava (серии 16 и 17) с синхронизированными субтитрами, полной транскрипцией, восточноармянскими переводами, грамматикой, словарём, викторинами и 12 играми.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

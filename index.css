@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mb-burgundy: #6B1029;
+  --color-mb-crimson: #9F1835;
+  --color-mb-red: #DC3545;
+  --color-mb-orange: #F28C28;
+  --color-mb-amber: #FFAC33;
+  --color-mb-gold: #FFD166;
+  --color-mb-canvas: #FAF7F5;
+  --color-mb-surface: #FFFFFF;
+  --color-mb-border: #EAE0DC;
+  --color-mb-ink: #1E1417;
+  --color-mb-muted: #6A585D;
+
+  --font-display: "Fraunces", "Noto Sans Armenian", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Armenian", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    font-size: 16.5px;
+    line-height: 1.62;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 17px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    html {
+      font-size: 17.5px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    html {
+      font-size: 18px;
+    }
+  }
+
+  body {
+    background-color: #9F1835;
+    background-image:
+      radial-gradient(120% 70% at 8% 0%, rgba(107, 16, 41, 0.94) 0%, rgba(159, 24, 53, 0.72) 42%, transparent 74%),
+      radial-gradient(95% 65% at 96% 8%, rgba(255, 209, 102, 0.92) 0%, rgba(255, 172, 51, 0.68) 46%, transparent 78%),
+      radial-gradient(110% 80% at 50% 100%, rgba(107, 16, 41, 0.88) 0%, rgba(220, 53, 69, 0.35) 55%, transparent 85%),
+      linear-gradient(135deg, #6B1029 0%, #9F1835 28%, #F28C28 64%, #FFAC33 84%, #FFD166 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--color-mb-ink);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom warm scrollbar for transcript panel */
+.mb-scroll::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+.mb-scroll::-webkit-scrollbar-track {
+  background: #FFF3DF;
+  border-radius: 9999px;
+}
+.mb-scroll::-webkit-scrollbar-thumb {
+  background: #E29B47;
+  border-radius: 9999px;
+}
+.mb-scroll::-webkit-scrollbar-thumb:hover {
+  background: #9F1835;
+}
